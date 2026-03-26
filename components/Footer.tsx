@@ -46,11 +46,8 @@ export default function Footer() {
             <p className="font-sans text-xs tracking-widest uppercase text-cream/60 mb-4">
               Studio
             </p>
-            <p className="font-sans text-sm text-cream/70 leading-relaxed mb-1">
-              Via Sansovino 3
-            </p>
-            <p className="font-sans text-sm text-cream/70 mb-4">
-              20133 Milano
+            <p className="font-sans text-sm text-cream/70 leading-relaxed mb-4">
+              Milano
             </p>
             <p className="font-sans text-sm text-cream/70">
               Riceve su appuntamento

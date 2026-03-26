@@ -45,7 +45,7 @@ const libri = [
     titolo: 'Tennis sul divano',
     editore: null,
     note: 'Con M. Mazzoni',
-    descrizione: 'Un'esplorazione psicoanalitica del tennis: le dinamiche inconsce che si giocano in campo, tra agonismo, paura e desiderio di vincere.',
+    descrizione: "Un'esplorazione psicoanalitica del tennis: le dinamiche inconsce che si giocano in campo, tra agonismo, paura e desiderio di vincere.",
     tags: ['Psicologia dello sport', 'Tennis', 'Psicoanalisi'],
   },
 ]

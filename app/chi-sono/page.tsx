@@ -38,7 +38,7 @@ const formazione = [
     anno: '1987',
     titolo: 'Membro effettivo',
     luogo: 'Società Internazionale di Micropsicoanalisi',
-    descrizione: 'Riconoscimento formale nell'approccio micropsicanalitico fondato da Silvio Fanti.',
+    descrizione: "Riconoscimento formale nell'approccio micropsicanalitico fondato da Silvio Fanti.",
   },
   {
     anno: '1989',

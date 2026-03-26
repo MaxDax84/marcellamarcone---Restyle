@@ -11,7 +11,7 @@ const servizi = [
   {
     icon: '◈',
     titolo: 'Umore e Depressione',
-    descrizione: 'Sostegno nei momenti di difficoltà emotiva, depressione e oscillazioni del tono dell'umore.',
+    descrizione: "Sostegno nei momenti di difficoltà emotiva, depressione e oscillazioni del tono dell'umore.",
   },
   {
     icon: '◈',
@@ -31,7 +31,7 @@ const servizi = [
   {
     icon: '◈',
     titolo: 'Micropsicoanalisi',
-    descrizione: 'Un approccio psicanalitico profondo, rivolto all'esplorazione dell'inconscio e dei nodi evolutivi della persona.',
+    descrizione: "Un approccio psicanalitico profondo, rivolto all'esplorazione dell'inconscio e dei nodi evolutivi della persona.",
   },
 ]
 

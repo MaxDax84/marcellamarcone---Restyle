@@ -200,7 +200,7 @@ export default function Servizi() {
               Ricevo a Milano su appuntamento. Il primo colloquio è conoscitivo.
             </p>
             <Link href="/contatti" className="btn-primary">
-              Prenota un colloquio
+              Richiedi un colloquio
             </Link>
           </div>
         </ScrollReveal>

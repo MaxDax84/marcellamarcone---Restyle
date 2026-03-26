@@ -69,7 +69,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link href="/contatti" className="btn-primary text-xs py-2.5 px-6">
-            Prenota
+            Contatti
           </Link>
         </nav>
 
@@ -118,7 +118,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link href="/contatti" className="btn-primary text-center mt-2">
-            Prenota un appuntamento
+            Contatti
           </Link>
         </nav>
       </div>

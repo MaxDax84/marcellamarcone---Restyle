@@ -65,7 +65,7 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contatti" className="btn-primary">
-                Prenota un colloquio
+                Richiedi un colloquio
               </Link>
               <Link href="/chi-sono" className="btn-outline">
                 Chi sono
@@ -202,7 +202,7 @@ export default function Home() {
               attenzione e riservatezza ad ogni persona.
             </p>
             <Link href="/contatti" className="btn-primary">
-              Prenota un appuntamento
+              Richiedi un appuntamento
             </Link>
           </ScrollReveal>
 

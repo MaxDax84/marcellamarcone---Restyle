@@ -16,7 +16,7 @@ export default function Contatti() {
       <section className="pt-32 pb-20 bg-gradient-to-b from-beige to-cream">
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal>
-            <p className="section-subtitle">Prenota un incontro</p>
+            <p className="section-subtitle">Richiedi un incontro</p>
             <h1 className="section-title text-5xl md:text-6xl mb-6">Contatti</h1>
             <div className="divider" />
             <p className="font-sans text-warm-taupe text-lg max-w-xl leading-relaxed">

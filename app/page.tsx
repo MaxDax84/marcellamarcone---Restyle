@@ -10,18 +10,8 @@ const servizi = [
   },
   {
     icon: '◈',
-    titolo: 'Umore e Depressione',
-    descrizione: "Sostegno nei momenti di difficoltà emotiva, depressione e oscillazioni del tono dell'umore.",
-  },
-  {
-    icon: '◈',
     titolo: 'Psicologia Perinatale',
     descrizione: 'Gravidanza, post partum, depressione post partum, infertilità. Un accompagnamento specialistico nel percorso della maternità.',
-  },
-  {
-    icon: '◈',
-    titolo: 'Disturbi Alimentari',
-    descrizione: 'Anoressia nervosa, bulimia e difficoltà nel rapporto con il cibo e il corpo.',
   },
   {
     icon: '◈',

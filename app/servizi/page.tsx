@@ -5,7 +5,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export const metadata: Metadata = {
   title: 'Servizi',
   description:
-    'Servizi di psicologia e psicoterapia della Dott.ssa Marcella Marcone a Milano: ansia, depressione, disturbi alimentari, psicologia perinatale, psicologia dello sport, micropsicoanalisi.',
+    'Servizi di psicologia e psicoterapia della Dott.ssa Marcella Marcone a Milano: ansia, psicologia perinatale, psicologia dello sport, micropsicoanalisi.',
 }
 
 const aree = [
@@ -17,11 +17,6 @@ const aree = [
         titolo: 'Ansia e Disturbi d\'Ansia',
         descrizione:
           'Fobie, attacchi di panico, sintomi ossessivo-compulsivi. L\'ansia è spesso una risposta comprensibile a vissuti profondi. Attraverso il percorso terapeutico è possibile comprenderne le radici e ritrovare serenità e libertà d\'azione.',
-      },
-      {
-        titolo: 'Depressione e Disturbi dell\'Umore',
-        descrizione:
-          'Stati depressivi, sindrome bipolare, umore basso persistente. La depressione non è una debolezza, ma un segnale del corpo e della mente. Un accompagnamento mirato aiuta a ritrovare vitalità e senso.',
       },
     ],
   },
@@ -43,17 +38,6 @@ const aree = [
         titolo: 'Menopausa e Climaterio',
         descrizione:
           'Le trasformazioni legate alla menopausa coinvolgono corpo, mente e identità femminile. Un percorso terapeutico aiuta ad attraversare questa fase con consapevolezza e serenità.',
-      },
-    ],
-  },
-  {
-    categoria: 'Alimentazione e corpo',
-    colore: 'terracotta',
-    servizi: [
-      {
-        titolo: 'Disturbi del Comportamento Alimentare',
-        descrizione:
-          'Anoressia nervosa, bulimia nervosa e difficoltà nel rapporto con il cibo e il proprio corpo. I disturbi alimentari sono espressione di conflitti profondi che richiedono un ascolto specialistico e non giudicante.',
       },
     ],
   },

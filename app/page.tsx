@@ -84,7 +84,7 @@ export default function Home() {
               <div className="absolute -bottom-4 -right-4 w-full h-full rounded-2xl bg-sage/10" />
               <div className="relative w-72 md:w-96 h-96 md:h-[28rem] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://www.marcellamarcone.it/images/foto.png"
+                  src="/images/foto.jpeg"
                   alt="Dott.ssa Marcella Marcone – Psicologa e Psicoterapeuta"
                   fill
                   className="object-cover object-top"

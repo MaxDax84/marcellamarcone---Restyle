@@ -102,7 +102,7 @@ export default function ChiSono() {
               <div className="absolute -top-4 -left-4 w-full h-full rounded-2xl border-2 border-sage/30" />
               <div className="relative rounded-2xl overflow-hidden shadow-xl h-[32rem]">
                 <Image
-                  src="https://www.marcellamarcone.it/images/foto.png"
+                  src="/images/foto.jpeg"
                   alt="Dott.ssa Marcella Marcone"
                   fill
                   className="object-cover object-top"

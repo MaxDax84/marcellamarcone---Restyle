@@ -54,8 +54,9 @@ export default function Home() {
             </h1>
             <div className="divider" />
             <p className="font-sans text-lg text-warm-taupe leading-relaxed mb-8 max-w-md">
-              Lunga esperienza clinica nel sostegno psicologico e psicanalitico a Milano.
-              Un luogo di ascolto, comprensione e trasformazione.
+              Lunga esperienza nella pratica della psicoterapia e della micropsicoanalisi,
+              svolte soprattutto con donne (ma anche uomini) in cerca o in attesa di un figlio
+              o dopo la sua nascita.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contatti" className="btn-primary">

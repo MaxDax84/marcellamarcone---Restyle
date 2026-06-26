@@ -38,7 +38,7 @@ export default function Contatti() {
                 <p className="section-subtitle mb-2">Email</p>
                 <p className="font-sans text-sm text-warm-taupe mb-4 leading-relaxed">
                   Per fissare un appuntamento o richiedere informazioni, scrivi una email.
-                  Sarà risposto nel minor tempo possibile.
+                  Risponderò nel minor tempo possibile.
                 </p>
                 <ContactReveal type="email" />
               </div>
@@ -48,7 +48,7 @@ export default function Contatti() {
                 <p className="section-subtitle mb-2">Studio</p>
                 <ContactReveal type="address" />
                 <p className="font-sans text-sm text-warm-taupe mt-3">
-                  I colloqui si svolgono esclusivamente su appuntamento.
+                  Le sedute si svolgono esclusivamente su appuntamento.
                 </p>
               </div>
 
@@ -58,15 +58,15 @@ export default function Contatti() {
                 <ul className="font-sans text-sm text-warm-taupe leading-relaxed space-y-2">
                   <li className="flex gap-2">
                     <span className="text-sage flex-shrink-0">◆</span>
-                    Visite su appuntamento — non sono disponibili accessi diretti
+                    Sedute su appuntamento — non sono disponibili accessi diretti
                   </li>
                   <li className="flex gap-2">
                     <span className="text-sage flex-shrink-0">◆</span>
-                    Prima consultazione: colloquio conoscitivo senza impegno
+                    Prima consultazione: seduta conoscitiva senza impegno
                   </li>
                   <li className="flex gap-2">
                     <span className="text-sage flex-shrink-0">◆</span>
-                    Lingua dei colloqui: italiano o francese
+                    Lingua delle sedute: italiano o francese
                   </li>
                 </ul>
               </div>

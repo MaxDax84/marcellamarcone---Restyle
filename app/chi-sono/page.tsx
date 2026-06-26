@@ -112,7 +112,7 @@ export default function ChiSono() {
               </div>
               {/* Badge */}
               <div className="absolute -bottom-5 -right-5 bg-terracotta text-cream rounded-xl px-5 py-4 shadow-lg">
-                <p className="font-sans text-sm font-semibold leading-snug tracking-wide">specializzata<br />in perinatalità</p>
+                <p className="font-sans text-sm font-semibold leading-snug tracking-wide">Specializzata<br />in perinatalità</p>
               </div>
             </div>
           </ScrollReveal>

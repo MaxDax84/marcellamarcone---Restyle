@@ -9,25 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: '#FAF7F2',
+        cream: '#F0F6FA',
         beige: {
-          DEFAULT: '#F0E6D3',
-          dark: '#DDD0BA',
+          DEFAULT: '#DAE8F0',
+          dark: '#C2D6E5',
         },
         terracotta: {
-          light: '#D4957A',
-          DEFAULT: '#B5725A',
-          dark: '#8C5240',
+          light: '#82BDD0',
+          DEFAULT: '#2B7390',
+          dark: '#1A5870',
         },
         sage: {
-          light: '#A3B896',
-          DEFAULT: '#7A9467',
-          dark: '#587049',
+          light: '#8AAFC4',
+          DEFAULT: '#537F97',
+          dark: '#345F75',
         },
         warm: {
-          brown: '#3D2B1F',
-          taupe: '#8B7355',
-          muted: '#A89880',
+          brown: '#0F2633',
+          taupe: '#2E5B72',
+          muted: '#5A8EA8',
         },
       },
       fontFamily: {

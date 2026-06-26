@@ -7,21 +7,25 @@ const servizi = [
     icon: '◈',
     titolo: 'Ansia e Fobie',
     descrizione: 'Attacchi di panico, fobie, sintomi ossessivi. Un percorso per ritrovare equilibrio e libertà interiore.',
+    href: '/servizi',
   },
   {
     icon: '◈',
-    titolo: 'Psicologia Perinatale',
-    descrizione: 'Gravidanza, post partum, depressione post partum, infertilità. Un accompagnamento specialistico nel percorso della maternità.',
+    titolo: 'Psicologia della Maternità',
+    descrizione: 'Gravidanza, preparazione al parto, depressione post partum, infertilità. Un accompagnamento specialistico in ogni fase della maternità.',
+    href: '/maternita',
   },
   {
     icon: '◈',
     titolo: 'Psicologia dello Sport',
     descrizione: 'Miglioramento della performance atletica e gestione della pressione agonistica.',
+    href: '/servizi',
   },
   {
     icon: '◈',
     titolo: 'Micropsicoanalisi',
     descrizione: "Un approccio psicanalitico profondo, rivolto all'esplorazione dell'inconscio e dei nodi evolutivi della persona.",
+    href: '/servizi',
   },
 ]
 
@@ -35,7 +39,7 @@ export default function Home() {
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233D2B1F' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230F2633' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}
         />
 
@@ -156,11 +160,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {servizi.map((s, i) => (
               <ScrollReveal key={s.titolo} delay={i * 80}>
-                <div className="card h-full">
+                <Link href={s.href} className="card h-full block group hover:border-terracotta/30 hover:shadow-md transition-all duration-300">
                   <span className="text-terracotta text-2xl mb-4 block">{s.icon}</span>
-                  <h3 className="font-serif text-xl text-warm-brown mb-3">{s.titolo}</h3>
+                  <h3 className="font-serif text-xl text-warm-brown mb-3 group-hover:text-terracotta transition-colors">{s.titolo}</h3>
                   <p className="font-sans text-sm text-warm-taupe leading-relaxed">{s.descrizione}</p>
-                </div>
+                </Link>
               </ScrollReveal>
             ))}
           </div>

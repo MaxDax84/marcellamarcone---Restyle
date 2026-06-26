@@ -3,9 +3,23 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Servizi',
+  title: 'Servizi – Psicologia e Psicoterapia',
   description:
-    'Servizi di psicologia e psicoterapia della Dott.ssa Marcella Marcone a Milano: ansia, psicologia perinatale, psicologia dello sport, micropsicoanalisi.',
+    'Servizi di psicologia e psicoterapia della Dott.ssa Marcella Marcone a Milano: psicologia della maternità, gravidanza, preparazione al parto, depressione post partum, infertilità, ansia, micropsicoanalisi e psicologia dello sport.',
+  keywords: [
+    'psicoterapeuta Milano servizi',
+    'psicologia perinatale',
+    'psicologia maternità Milano',
+    'preparazione al parto psicologa',
+    'depressione post partum Milano',
+    'infertilità supporto psicologico',
+    'ansia psicoterapia Milano',
+    'micropsicoanalisi Milano',
+    'psicologia dello sport',
+  ],
+  alternates: {
+    canonical: 'https://www.marcellamarcone.it/servizi',
+  },
 }
 
 const aree = [
@@ -23,11 +37,12 @@ const aree = [
   {
     categoria: 'Psicologia della donna',
     colore: 'sage',
+    href: '/maternita',
     servizi: [
       {
-        titolo: 'Psicologia Perinatale',
+        titolo: 'Psicologia della Maternità',
         descrizione:
-          'Gravidanza, nascita, post partum, depressione post partum. Un periodo ricco di trasformazioni che può portare con sé ansie, paure e fragilità. Un sostegno specialistico accompagna la donna nel diventare madre.',
+          'Gravidanza, preparazione al parto, post partum, depressione post partum. Un accompagnamento specialistico in ogni fase: dal desiderio di diventare madre fino al periodo successivo alla nascita.',
       },
       {
         titolo: 'Infertilità e Percorsi PMA',
@@ -128,6 +143,17 @@ export default function Servizi() {
                     </div>
                   ))}
                 </div>
+
+                {'href' in area && area.href && (
+                  <div className="mt-6">
+                    <Link
+                      href={area.href}
+                      className="inline-flex items-center gap-2 font-sans text-sm text-terracotta hover:text-terracotta-dark transition-colors duration-300"
+                    >
+                      Approfondisci questo percorso →
+                    </Link>
+                  </div>
+                )}
               </div>
             </ScrollReveal>
           ))}

@@ -89,11 +89,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-warm-muted">
-          <span className="font-sans text-xs tracking-widest uppercase">Scopri</span>
-          <div className="w-px h-12 bg-terracotta/30 animate-pulse" />
-        </div>
       </section>
 
       {/* CITAZIONE */}

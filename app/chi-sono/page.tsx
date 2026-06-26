@@ -9,30 +9,38 @@ export const metadata: Metadata = {
     'Curriculum e formazione della Dott.ssa Marcella Marcone, psicologa e psicoterapeuta a Milano. 37 anni di esperienza clinica, micropsicoanalisi, psicologia perinatale.',
 }
 
-const formazione = [
+const formazione: { anno: string; titolo: string; luogo: string; descrizione: string; badge?: string }[] = [
   {
-    anno: '1976',
-    titolo: 'Laurea in Filosofia',
-    luogo: 'Università di Torino',
-    descrizione: 'Indirizzo psicologico, con approfondimento nelle discipline della mente e del comportamento umano.',
+    anno: '2025',
+    titolo: 'Autrice del corso per psicologi',
+    luogo: '"Aspetti psicologici della gravidanza e del puerperio"',
+    descrizione: 'Corso di formazione professionale continua per psicologi sugli aspetti psicologici della gravidanza e del puerperio.',
   },
   {
-    anno: '1976–1978',
-    titolo: 'Analisi personale',
-    luogo: 'Formazione psicoanalitica',
-    descrizione: 'Primo percorso di analisi personale come fondamento della formazione clinica.',
+    anno: '2025',
+    titolo: 'Corso di perfezionamento',
+    luogo: 'Università di Firenze',
+    descrizione: '"I primi mille giorni di vita"',
   },
   {
-    anno: '1979–1981',
-    titolo: 'Analisi didattica',
-    luogo: 'Formazione psicoanalitica',
-    descrizione: 'Analisi didattica approfondita nel quadro della formazione psicoanalitica ufficiale.',
+    anno: '2023 – oggi',
+    titolo: 'Docente di perinatalità',
+    luogo: 'Università di Mosca – corso di psicoanalisi',
+    descrizione: 'Docenza nel corso di psicoanalisi dell\'Università di Mosca con focus sulla psicologia perinatale.',
   },
   {
-    anno: '1982–1986',
-    titolo: 'Supervisione clinica',
-    luogo: 'Formazione avanzata',
-    descrizione: 'Supervisioni e consultazioni cliniche per il consolidamento della pratica terapeutica.',
+    anno: '1995',
+    titolo: 'Trasferimento all\'Albo della Lombardia',
+    luogo: 'Albo degli Psicologi della Lombardia n. 5056',
+    descrizione: 'Trasferimento e continuazione dell\'attività clinica a Milano.',
+    badge: 'ABILITATA ALLA PRATICA DELLA PSICOTERAPIA',
+  },
+  {
+    anno: '1989',
+    titolo: 'Iscrizione all\'Albo degli Psicologi',
+    luogo: 'Albo del Piemonte',
+    descrizione: 'Prima iscrizione all\'Albo degli Psicologi del Piemonte.',
+    badge: 'ABILITATA ALLA PRATICA DELLA PSICOTERAPIA',
   },
   {
     anno: '1987',
@@ -41,16 +49,10 @@ const formazione = [
     descrizione: "Riconoscimento formale nell'approccio micropsicanalitico fondato da Silvio Fanti.",
   },
   {
-    anno: '1989',
-    titolo: 'Iscrizione all\'Albo degli Psicologi',
-    luogo: 'Albo del Piemonte, con abilitazione alla psicoterapia',
-    descrizione: 'Prima iscrizione con abilitazione all\'esercizio della psicoterapia.',
-  },
-  {
-    anno: '1995',
-    titolo: 'Trasferimento all\'Albo della Lombardia',
-    luogo: 'Albo degli Psicologi della Lombardia n. 5056',
-    descrizione: 'Continuazione dell\'attività clinica a Milano.',
+    anno: '1976',
+    titolo: 'Laurea in Filosofia',
+    luogo: 'Università di Torino',
+    descrizione: 'Indirizzo psicologico, con approfondimento nelle discipline della mente e del comportamento umano.',
   },
 ]
 
@@ -68,7 +70,7 @@ const collaborazioni = [
   {
     periodo: '1982 – 1992',
     luogo: 'Clinica Sedes Sapientiae · Torino',
-    ruolo: 'Attività clinica psicoanalitica',
+    ruolo: 'Preparazione al parto, accompagnamento alla nascita e sostegno alla genitorialità',
   },
 ]
 
@@ -77,7 +79,6 @@ const docenza = [
   'Salute della donna',
   'Educazione sessuale',
   'Psicologia dello sport',
-  'Psicologia del gemello',
 ]
 
 export default function ChiSono() {
@@ -110,9 +111,8 @@ export default function ChiSono() {
                 />
               </div>
               {/* Badge */}
-              <div className="absolute -bottom-5 -right-5 bg-terracotta text-cream rounded-xl p-4 shadow-lg">
-                <p className="font-serif text-3xl font-semibold">37+</p>
-                <p className="font-sans text-xs tracking-wide">anni di<br />esperienza</p>
+              <div className="absolute -bottom-5 -right-5 bg-terracotta text-cream rounded-xl px-5 py-4 shadow-lg">
+                <p className="font-sans text-sm font-semibold leading-snug tracking-wide">specializzata<br />in perinatalità</p>
               </div>
             </div>
           </ScrollReveal>
@@ -123,20 +123,16 @@ export default function ChiSono() {
             </h2>
             <div className="divider" />
             <p className="font-sans text-warm-taupe leading-relaxed mb-4">
-              Mi sono avvicinata alla psicologia attraverso la filosofia, laureandomi all'Università di
-              Torino nel 1976 con un indirizzo psicologico. Da subito ho intrapreso un percorso di
-              formazione psicoanalitica rigoroso: analisi personale, analisi didattica e supervisione
-              clinica prolungata.
+              Mi sono laureata all'Università di Torino nel 1976 con un indirizzo psicologico. Da subito
+              ho intrapreso un percorso di formazione psicoanalitica rigoroso: psicoanalisi personale,
+              psicoanalisi didattica e supervisione presso la Società Internazionale di Micropsicoanalisi,
+              di cui sono diventata membro effettivo nel 1987. La micropsicoanalisi fondata da Silvio Fanti
+              approfondisce l'esplorazione dell'inconscio attraverso sedute di lunga durata.
             </p>
             <p className="font-sans text-warm-taupe leading-relaxed mb-4">
-              Nel 1987 sono diventata membro effettivo della Società Internazionale di Micropsicoanalisi,
-              un approccio psicanalitico fondato da Silvio Fanti che approfondisce l'esplorazione
-              dell'inconscio attraverso sedute di lunga durata.
-            </p>
-            <p className="font-sans text-warm-taupe leading-relaxed mb-4">
-              Ho sviluppato negli anni una specializzazione nella <strong className="text-warm-brown font-medium">psicologia perinatale e della donna</strong>:
-              gravidanza, post partum, depressione post partum, infertilità e menopausa. Parallelamente ho
-              approfondito la psicologia dello sport e la psicologia del gemello.
+              Dal 1982 mi sono occupata di <strong className="text-warm-brown font-medium">psicologia perinatale e della donna</strong>:
+              infertilità, PMA, gravidanza, problematiche del post partum e menopausa. Parallelamente ho
+              approfondito la psicologia dello sport.
             </p>
             <p className="font-sans text-warm-taupe leading-relaxed">
               Parlo italiano e francese. Ricevo a Milano, in Via Sansovino 3, in uno studio riservato
@@ -177,6 +173,11 @@ export default function ChiSono() {
                       </div>
                       <p className="font-sans text-xs text-warm-taupe tracking-wide uppercase mb-2">{f.luogo}</p>
                       <p className="font-sans text-sm text-warm-taupe leading-relaxed">{f.descrizione}</p>
+                      {f.badge && (
+                        <p className="font-sans text-xs font-bold text-terracotta tracking-widest uppercase mt-3">
+                          {f.badge}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </ScrollReveal>

@@ -11,8 +11,8 @@ const servizi = [
   },
   {
     icon: '◈',
-    titolo: 'Psicologia della Maternità',
-    descrizione: 'Gravidanza, preparazione al parto, depressione post partum, infertilità. Un accompagnamento specialistico in ogni fase della maternità.',
+    titolo: 'Psicologia Perinatale',
+    descrizione: 'Gravidanza, aborti, infertilità, PMA, problemi del post partum, difficoltà nel rapporto col bambino. Un accompagnamento specialistico nel percorso della maternità.',
     href: '/maternita',
   },
   {
@@ -24,7 +24,7 @@ const servizi = [
   {
     icon: '◈',
     titolo: 'Micropsicoanalisi',
-    descrizione: "Un approccio psicanalitico profondo, rivolto all'esplorazione dell'inconscio e dei nodi evolutivi della persona.",
+    descrizione: "Un approccio psicoanalitico profondo, basato su sedute di lunga durata, rivolto all'esplorazione dell'inconscio.",
     href: '/servizi',
   },
 ]
@@ -54,7 +54,7 @@ export default function Home() {
             </h1>
             <div className="divider" />
             <p className="font-sans text-lg text-warm-taupe leading-relaxed mb-8 max-w-md">
-              Oltre trentasette anni di esperienza clinica nel sostegno psicologico e psicanalitico a Milano.
+              Lunga esperienza clinica nel sostegno psicologico e psicanalitico a Milano.
               Un luogo di ascolto, comprensione e trasformazione.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -133,12 +133,12 @@ export default function Home() {
             </h2>
             <div className="divider" />
             <p className="font-sans text-warm-taupe leading-relaxed mb-4">
-              Laureata in Filosofia all'Università di Torino nel 1976, mi sono formata nella tradizione psicoanalitica
-              con un percorso rigoroso di analisi personale, analisi didattica e supervisione clinica.
+              Laureata in Filosofia all'Università di Torino nel 1976, mi sono formata
+              con un percorso rigoroso di psicoanalisi personale, didattica e supervisioni.
             </p>
             <p className="font-sans text-warm-taupe leading-relaxed mb-8">
               Dal 1987 sono membro effettivo della Società Internazionale di Micropsicoanalisi.
-              Ricevo a Milano, dove esercito la libera professione integrando psicanalisi, psicoterapia
+              Ricevo a Milano, dove esercito la libera professione integrando psicoanalisi, psicoterapia
               e una specializzazione nella psicologia perinatale e della donna.
             </p>
             <Link href="/chi-sono" className="btn-outline">

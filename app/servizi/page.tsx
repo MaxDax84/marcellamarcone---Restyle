@@ -40,9 +40,9 @@ const aree = [
     href: '/maternita',
     servizi: [
       {
-        titolo: 'Psicologia della Maternità',
+        titolo: 'Psicologia Perinatale',
         descrizione:
-          'Gravidanza, preparazione al parto, post partum, depressione post partum. Un accompagnamento specialistico in ogni fase: dal desiderio di diventare madre fino al periodo successivo alla nascita.',
+          'Gravidanza, aborti, infertilità, PMA, problemi del post partum, difficoltà nel rapporto col bambino. Un accompagnamento specialistico nel percorso della maternità.',
       },
       {
         titolo: 'Infertilità e Percorsi PMA',

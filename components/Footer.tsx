@@ -12,8 +12,7 @@ export default function Footer() {
               Psicologa · Psicoterapeuta
             </p>
             <p className="font-sans text-sm leading-relaxed text-cream/70">
-              Ascolto, cura e percorsi di trasformazione personale.<br />
-              Milano, dal 1987.
+              Ascolto, cura e percorsi di trasformazione personale. Milano, dal 1987.
             </p>
           </div>
 

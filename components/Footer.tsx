@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-cream/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-sans text-xs text-cream/40">
+          <p className="font-sans text-xs text-cream/40 text-center md:text-left">
             © {new Date().getFullYear()} Dott.ssa Marcella Marcone · P.IVA 11971950156
           </p>
           <p className="font-sans text-xs text-cream/40">

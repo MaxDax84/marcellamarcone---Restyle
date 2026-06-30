@@ -112,7 +112,7 @@ export default function Home() {
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-sage/10 rounded-2xl" />
               <div className="relative rounded-2xl overflow-hidden shadow-xl h-80 md:h-[26rem]">
                 <Image
-                  src="https://www.marcellamarcone.it/images/studio2.png"
+                  src="/images/studio2.png"
                   alt="Studio della Dott.ssa Marcella Marcone a Milano"
                   fill
                   className="object-cover"
@@ -199,7 +199,7 @@ export default function Home() {
           <ScrollReveal delay={150}>
             <div className="relative rounded-2xl overflow-hidden shadow-xl h-80 md:h-[26rem]">
               <Image
-                src="https://www.marcellamarcone.it/images/studio3.png"
+                src="/images/studio3.png"
                 alt="Studio di psicologia e psicoterapia a Milano"
                 fill
                 className="object-cover"

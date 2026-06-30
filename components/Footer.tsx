@@ -70,6 +70,17 @@ export default function Footer() {
           <p className="font-sans text-xs text-cream/40">
             Iscritta all&apos;Albo degli Psicologi della Lombardia n. 5056
           </p>
+          <p className="font-sans text-xs text-cream/40">
+            Sito realizzato da{' '}
+            <a
+              href="https://massimodassano.it"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cream/60 hover:text-cream transition-colors duration-300 underline underline-offset-2"
+            >
+              Massimo Dassano
+            </a>
+          </p>
         </div>
       </div>
     </footer>

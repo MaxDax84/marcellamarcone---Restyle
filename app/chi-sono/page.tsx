@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: 'Chi Sono',
   description:
     'Curriculum e formazione della Dott.ssa Marcella Marcone, psicologa e psicoterapeuta a Milano. 37 anni di esperienza clinica, micropsicoanalisi, psicologia perinatale.',
+  alternates: {
+    canonical: 'https://www.marcellamarcone.it/chi-sono',
+  },
+  openGraph: {
+    title: 'Chi Sono | Dott.ssa Marcella Marcone',
+    description:
+      'Curriculum e formazione della Dott.ssa Marcella Marcone, psicologa e psicoterapeuta a Milano. 37 anni di esperienza clinica, micropsicoanalisi, psicologia perinatale.',
+    url: 'https://www.marcellamarcone.it/chi-sono',
+    images: [{ url: '/images/foto.jpeg', alt: 'Dott.ssa Marcella Marcone' }],
+  },
 }
 
 const formazione: { anno: string; titolo: string; luogo: string; descrizione: string; badge?: string }[] = [

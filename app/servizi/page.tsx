@@ -20,6 +20,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.marcellamarcone.it/servizi',
   },
+  openGraph: {
+    title: 'Servizi – Psicologia e Psicoterapia | Dott.ssa Marcella Marcone',
+    description:
+      'Servizi di psicologia e psicoterapia della Dott.ssa Marcella Marcone a Milano: psicologia della maternità, gravidanza, preparazione al parto, depressione post partum, infertilità, ansia e micropsicoanalisi.',
+    url: 'https://www.marcellamarcone.it/servizi',
+    images: [{ url: '/images/foto.jpeg', alt: 'Dott.ssa Marcella Marcone' }],
+  },
 }
 
 const aree = [

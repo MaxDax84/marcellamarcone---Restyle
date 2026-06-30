@@ -7,6 +7,22 @@ export const metadata: Metadata = {
   title: 'Contatti',
   description:
     'Contatta la Dott.ssa Marcella Marcone, psicologa e psicoterapeuta a Milano. Studio in Via Sansovino 3, 20133 Milano. Riceve su appuntamento.',
+  keywords: [
+    'contatti psicologa Milano',
+    'appuntamento psicoterapeuta Milano',
+    'studio psicologia Milano',
+    'Via Sansovino 3 Milano',
+  ],
+  alternates: {
+    canonical: 'https://www.marcellamarcone.it/contatti',
+  },
+  openGraph: {
+    title: 'Contatti | Dott.ssa Marcella Marcone',
+    description:
+      'Contatta la Dott.ssa Marcella Marcone, psicologa e psicoterapeuta a Milano. Studio in Via Sansovino 3, 20133 Milano.',
+    url: 'https://www.marcellamarcone.it/contatti',
+    images: [{ url: '/images/foto.jpeg', alt: 'Dott.ssa Marcella Marcone' }],
+  },
 }
 
 export default function Contatti() {

@@ -1,6 +1,20 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://www.marcellamarcone.it',
+  },
+  openGraph: {
+    title: 'Dott.ssa Marcella Marcone – Psicologa e Psicoterapeuta | Milano',
+    description:
+      'Psicologa e Psicoterapeuta a Milano specializzata in psicologia della maternità, psicologia perinatale, gravidanza, preparazione al parto, depressione post partum, infertilità e micropsicoanalisi.',
+    url: 'https://www.marcellamarcone.it',
+    images: [{ url: '/images/foto.jpeg', alt: 'Dott.ssa Marcella Marcone – Psicologa e Psicoterapeuta' }],
+  },
+}
 
 const servizi = [
   {

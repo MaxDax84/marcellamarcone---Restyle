@@ -34,6 +34,22 @@ export const metadata: Metadata = {
     locale: 'it_IT',
     siteName: 'Dott.ssa Marcella Marcone',
     url: 'https://www.marcellamarcone.it',
+    title: 'Dott.ssa Marcella Marcone – Psicologa e Psicoterapeuta | Milano',
+    description:
+      'Psicologa e Psicoterapeuta a Milano specializzata in psicologia della maternità, psicologia perinatale, gravidanza, preparazione al parto, depressione post partum, infertilità e micropsicoanalisi.',
+    images: [
+      {
+        url: '/images/foto.jpeg',
+        alt: 'Dott.ssa Marcella Marcone – Psicologa e Psicoterapeuta',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dott.ssa Marcella Marcone – Psicologa e Psicoterapeuta | Milano',
+    description:
+      'Psicologa e Psicoterapeuta a Milano specializzata in psicologia della maternità, psicologia perinatale e micropsicoanalisi.',
+    images: ['/images/foto.jpeg'],
   },
   robots: {
     index: true,

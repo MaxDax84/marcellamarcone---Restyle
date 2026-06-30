@@ -25,6 +25,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.marcellamarcone.it/maternita',
   },
+  openGraph: {
+    title: 'Psicologia della Maternità | Dott.ssa Marcella Marcone',
+    description:
+      'Psicologa specializzata in maternità a Milano. Supporto psicologico per gravidanza, infertilità, preparazione al parto e depressione post partum.',
+    url: 'https://www.marcellamarcone.it/maternita',
+    images: [{ url: '/images/foto.jpeg', alt: 'Dott.ssa Marcella Marcone' }],
+  },
 }
 
 const faq = [

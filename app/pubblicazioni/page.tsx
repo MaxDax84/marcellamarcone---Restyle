@@ -5,6 +5,24 @@ export const metadata: Metadata = {
   title: 'Pubblicazioni',
   description:
     'Libri e articoli scientifici della Dott.ssa Marcella Marcone: psicologia della gravidanza, post partum, psicologia dello sport e micropsicoanalisi.',
+  keywords: [
+    'pubblicazioni Marcella Marcone',
+    'libri psicologia gravidanza',
+    'un sogno lungo nove mesi',
+    'vivere la gravidanza',
+    'micropsicoanalisi libri',
+    'psicologia dello sport libri',
+  ],
+  alternates: {
+    canonical: 'https://www.marcellamarcone.it/pubblicazioni',
+  },
+  openGraph: {
+    title: 'Pubblicazioni | Dott.ssa Marcella Marcone',
+    description:
+      'Libri e articoli scientifici della Dott.ssa Marcella Marcone: psicologia della gravidanza, post partum, psicologia dello sport e micropsicoanalisi.',
+    url: 'https://www.marcellamarcone.it/pubblicazioni',
+    images: [{ url: '/images/foto.jpeg', alt: 'Dott.ssa Marcella Marcone' }],
+  },
 }
 
 const libri = [

@@ -70,6 +70,15 @@ export default function Footer() {
           <p className="font-sans text-xs text-cream/40">
             Iscritta all&apos;Albo degli Psicologi della Lombardia n. 5056
           </p>
+          <div className="flex flex-wrap items-center gap-4">
+            <Link href="/privacy-policy" className="font-sans text-xs text-cream/40 hover:text-cream/70 transition-colors duration-300">
+              Privacy Policy
+            </Link>
+            <span className="text-cream/20 text-xs">·</span>
+            <Link href="/cookie-policy" className="font-sans text-xs text-cream/40 hover:text-cream/70 transition-colors duration-300">
+              Cookie Policy
+            </Link>
+          </div>
           <p className="font-sans text-xs text-cream/40">
             Sito realizzato da{' '}
             <a

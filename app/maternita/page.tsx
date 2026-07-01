@@ -3,9 +3,9 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Psicologia della Maternità – Supporto per Gravidanza, Parto e Post Partum',
+  title: 'Psicologia della Maternità',
   description:
-    'Psicologa specializzata in maternità a Milano. Supporto psicologico per prepararsi a diventare mamma, affrontare le difficoltà della maternità, infertilità, preparazione al parto e depressione post partum.',
+    'Psicologa specializzata in maternità a Milano: supporto per gravidanza, preparazione al parto, infertilità e depressione post partum.',
   keywords: [
     'psicologia della maternità Milano',
     'maternità difficile',

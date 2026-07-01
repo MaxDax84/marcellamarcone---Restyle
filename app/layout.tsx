@@ -8,11 +8,11 @@ import { IUBENDA_SITE_ID, IUBENDA_POLICY_ID } from '@/lib/iubenda'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.marcellamarcone.it'),
   title: {
-    default: 'Dott.ssa Marcella Marcone – Psicologa e Psicoterapeuta | Milano',
+    default: 'Marcella Marcone – Psicologa e Psicoterapeuta a Milano',
     template: '%s | Dott.ssa Marcella Marcone',
   },
   description:
-    'Psicologa e Psicoterapeuta a Milano specializzata in psicologia della maternità, psicologia perinatale, gravidanza, preparazione al parto, depressione post partum, infertilità e micropsicoanalisi. Studio in Via Sansovino 3, Milano.',
+    'Psicologa e Psicoterapeuta a Milano, specializzata in psicologia della maternità, gravidanza, post partum, infertilità e micropsicoanalisi.',
   keywords: [
     'psicologa Milano',
     'psicoterapeuta Milano',

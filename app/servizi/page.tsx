@@ -3,9 +3,9 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Servizi – Psicologia e Psicoterapia',
+  title: 'Servizi di Psicologia',
   description:
-    'Servizi di psicologia e psicoterapia della Dott.ssa Marcella Marcone a Milano: psicologia della maternità, gravidanza, preparazione al parto, depressione post partum, infertilità, ansia, micropsicoanalisi e psicologia dello sport.',
+    'Servizi di psicologia e psicoterapia a Milano: maternità, gravidanza, preparazione al parto, depressione post partum, infertilità, ansia e micropsicoanalisi.',
   keywords: [
     'psicoterapeuta Milano servizi',
     'psicologia perinatale',

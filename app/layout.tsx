@@ -63,7 +63,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'MedicalBusiness',
+  '@type': 'Psychologist',
   name: 'Dott.ssa Marcella Marcone – Psicologa e Psicoterapeuta',
   description:
     'Psicologa e Psicoterapeuta a Milano specializzata in psicologia della maternità, psicologia perinatale, preparazione al parto, depressione post partum, infertilità e micropsicoanalisi.',
@@ -79,7 +79,7 @@ const jsonLd = {
     '@type': 'City',
     name: 'Milano',
   },
-  medicalSpecialty: ['Psychiatry', 'Midwifery'],
+  medicalSpecialty: ['Psychiatric', 'Midwifery'],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Servizi di Psicologia e Psicoterapia',

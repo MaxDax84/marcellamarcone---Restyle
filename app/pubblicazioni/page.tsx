@@ -114,6 +114,7 @@ const articoli = [
 ]
 
 const affiliazioni = [
+  { nome: 'Sostegno alla Maternità – Direttrice', url: 'https://www.sostegnoallamaternita.com' },
   { nome: 'Société Internationale de Micropsychanalyse', url: 'https://www.micropsychanalyse.net' },
   { nome: 'Società Italiana di Micropsicoanalisi', url: 'https://www.micropsicoanalisi.com' },
   { nome: 'AEPEA – Associazione di Psicologia Perinatale', url: 'https://www.aepsy.org' },

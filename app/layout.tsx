@@ -79,6 +79,7 @@ const jsonLd = {
     '@type': 'City',
     name: 'Milano',
   },
+  sameAs: ['https://www.sostegnoallamaternita.com'],
   medicalSpecialty: ['Psychiatric', 'Midwifery'],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',

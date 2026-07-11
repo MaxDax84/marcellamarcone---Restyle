@@ -118,7 +118,6 @@ const affiliazioni = [
   { nome: 'Société Internationale de Micropsychanalyse', url: 'https://www.micropsychanalyse.net' },
   { nome: 'Società Italiana di Micropsicoanalisi', url: 'https://www.micropsicoanalisi.com' },
   { nome: 'AEPEA – Associazione di Psicologia Perinatale', url: 'https://www.aepsy.org' },
-  { nome: 'Tennis sul divano', url: 'https://www.tennissuldivano.com' },
 ]
 
 const tagColors: Record<string, string> = {

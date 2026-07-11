@@ -9,7 +9,6 @@ const links = [
   { href: '/chi-sono', label: 'Chi Sono' },
   { href: '/servizi', label: 'Servizi' },
   { href: '/pubblicazioni', label: 'Pubblicazioni' },
-  { href: '/contatti', label: 'Contatti' },
 ]
 
 export default function Navbar() {

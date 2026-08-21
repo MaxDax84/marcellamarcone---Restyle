@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { IUBENDA_SITE_ID, IUBENDA_POLICY_ID } from '@/lib/iubenda'
+import CookieBanner from '@/components/CookieBanner'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.marcellamarcone.it'),
@@ -110,35 +109,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
-        {IUBENDA_SITE_ID > 0 && IUBENDA_POLICY_ID > 0 && (
-          <>
-            <Script id="iubenda-config" strategy="beforeInteractive">{`
-              var _iub = _iub || [];
-              _iub.csConfiguration = {
-                "siteId": ${IUBENDA_SITE_ID},
-                "cookiePolicyId": ${IUBENDA_POLICY_ID},
-                "lang": "it",
-                "storage": { "useSiteId": true },
-                "banner": {
-                  "acceptButtonColor": "#2B7390",
-                  "acceptButtonDisplay": true,
-                  "backgroundColor": "#0F2633",
-                  "closeButtonDisplay": false,
-                  "customizeButtonDisplay": true,
-                  "explicitWithdrawal": true,
-                  "listPurposes": true,
-                  "ownerName": "Dott.ssa Marcella Marcone",
-                  "position": "bottom",
-                  "rejectButtonDisplay": true,
-                  "textColor": "#F0F6FA"
-                }
-              };
-            `}</Script>
-            <Script src={`https://cs.iubenda.com/autoblocking/${IUBENDA_SITE_ID}.js`} strategy="afterInteractive" />
-            <Script src="//cdn.iubenda.com/cs/gpp/stub.js" strategy="afterInteractive" />
-            <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" strategy="afterInteractive" />
-          </>
-        )}
+        <CookieBanner />
       </body>
     </html>
   )

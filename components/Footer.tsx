@@ -77,6 +77,10 @@ export default function Footer() {
             <Link href="/cookie-policy" className="font-sans text-xs text-cream/40 hover:text-cream/70 transition-colors duration-300">
               Cookie Policy
             </Link>
+            <span className="text-cream/20 text-xs">·</span>
+            <Link href="/termini-condizioni" className="font-sans text-xs text-cream/40 hover:text-cream/70 transition-colors duration-300">
+              Termini e Condizioni
+            </Link>
           </div>
           <p className="font-sans text-xs text-cream/40">
             Sito realizzato da{' '}

@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Cookie Policy',
+  description:
+    'Tipologie di cookie e strumenti equivalenti utilizzati dal sito della Dott.ssa Marcella Marcone e modalità per gestire o revocare il consenso.',
   robots: { index: false, follow: false },
 }
 
@@ -35,8 +37,9 @@ export default function CookiePolicy() {
           Nella pagina Contatti è presente una mappa di <strong>Google Maps</strong> (Google LLC,
           USA) con l&apos;indirizzo dello studio.{' '}
           <strong>La mappa non viene caricata automaticamente</strong>: compare solo dopo che
-          accetti i cookie dal banner in fondo alla pagina, oppure se attivi manualmente la mappa
-          cliccando sul pulsante &laquo;Attiva la mappa&raquo;. Una volta caricata, Google può
+          accetti i cookie dal banner in fondo alla pagina, oppure se la attivi singolarmente
+          cliccando sul pulsante &laquo;Carica la mappa di Google&raquo;. Quel pulsante vale
+          soltanto per la mappa e non modifica le altre preferenze. Una volta caricata, Google può
           installare propri cookie soggetti alla{' '}
           <a
             href="https://policies.google.com/privacy"
@@ -51,9 +54,17 @@ export default function CookiePolicy() {
 
         <h2 className="font-serif text-2xl text-warm-brown mt-8">Come gestire la tua scelta</h2>
         <p>
-          Puoi accettare o rifiutare l&apos;attivazione della mappa dal banner mostrato alla prima
-          visita. La scelta viene salvata nella memoria locale del tuo browser e puoi cambiarla in
-          qualsiasi momento cancellando i dati di navigazione del sito dalle impostazioni del
+          Puoi accettare o rifiutare dal banner mostrato alla prima visita. La scelta viene
+          salvata nella memoria locale del tuo browser e{' '}
+          <strong>
+            puoi modificarla o revocarla in qualsiasi momento dal link &laquo;Preferenze
+            cookie&raquo; presente nel footer di ogni pagina
+          </strong>
+          , che riapre il banner. Revocare è semplice quanto acconsentire, come previsto
+          dall&apos;art. 7.3 del GDPR.
+        </p>
+        <p>
+          In alternativa puoi cancellare i dati di navigazione del sito dalle impostazioni del
           browser:
         </p>
         <ul className="list-disc pl-6 space-y-1">
@@ -63,21 +74,13 @@ export default function CookiePolicy() {
           <li><a href="https://support.microsoft.com/it-it/microsoft-edge/eliminare-i-cookie-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Edge</a></li>
         </ul>
 
-        <h2 className="font-serif text-2xl text-warm-brown mt-8">Google Fonts</h2>
+        <h2 className="font-serif text-2xl text-warm-brown mt-8">Caratteri tipografici</h2>
         <p>
-          Per la visualizzazione dei caratteri tipografici, il sito carica i font Playfair Display
-          e Inter da Google Fonts. Questo comporta una connessione tecnica ai server di Google,
-          che può registrare l&apos;indirizzo IP del dispositivo utilizzato per la visita, secondo
-          le medesime modalità indicate nella{' '}
-          <a
-            href="https://policies.google.com/privacy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-terracotta hover:underline"
-          >
-            informativa privacy di Google
-          </a>
-          .
+          I caratteri Playfair Display e Inter sono <strong>ospitati direttamente su questo
+          sito</strong>: non viene effettuata alcuna connessione ai server di Google Fonts e il
+          tuo indirizzo IP non viene comunicato a Google per visualizzare le pagine. L&apos;unico
+          contenuto di terze parti è la mappa descritta sopra, che resta subordinata al tuo
+          consenso.
         </p>
       </div>
     </section>

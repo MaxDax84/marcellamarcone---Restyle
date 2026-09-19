@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
+  description:
+    'Informativa sul trattamento dei dati personali degli utenti del sito della Dott.ssa Marcella Marcone, ai sensi del Regolamento UE 2016/679 (GDPR).',
   robots: { index: false, follow: false },
 }
 

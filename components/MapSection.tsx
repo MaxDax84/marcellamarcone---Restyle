@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { CONSENT_EVENT, getConsent, setConsent } from '@/lib/cookieConsent'
+import { CONSENT_EVENT, isMapAllowed, setMapConsent } from '@/lib/cookieConsent'
 
 // Indirizzo e URL della mappa caricati solo lato client — non presenti nell'HTML server-rendered
 const a1 = 'Via Sansovino 3'
@@ -16,9 +16,9 @@ export default function MapSection() {
 
   useEffect(() => {
     setMounted(true)
-    setMapAllowed(getConsent() === 'accepted')
+    setMapAllowed(isMapAllowed())
 
-    const onConsentChange = () => setMapAllowed(getConsent() === 'accepted')
+    const onConsentChange = () => setMapAllowed(isMapAllowed())
     window.addEventListener(CONSENT_EVENT, onConsentChange)
     return () => window.removeEventListener(CONSENT_EVENT, onConsentChange)
   }, [])
@@ -67,18 +67,24 @@ export default function MapSection() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
             <p className="font-sans text-sm text-warm-taupe max-w-xs">
-              La mappa di Google Maps verrà caricata solo con il tuo consenso ai cookie.
+              La mappa è fornita da Google Maps. Caricandola, il tuo indirizzo IP viene
+              comunicato a Google, per questo serve il tuo consenso.
             </p>
             <button
               type="button"
               onClick={() => {
-                setConsent('accepted')
+                // Consenso limitato alla sola mappa: non equivale ad accettare
+                // il banner generale, che resta invariato.
+                setMapConsent('accepted')
                 setMapAllowed(true)
               }}
               className="btn-primary text-xs py-2.5 px-5"
             >
-              Attiva la mappa
+              Carica la mappa di Google
             </button>
+            <p className="font-sans text-xs text-warm-muted max-w-xs">
+              Vale solo per questa mappa. Le altre preferenze restano invariate.
+            </p>
           </div>
         )}
       </div>

@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Termini e Condizioni',
+  description:
+    'Condizioni di utilizzo del sito della Dott.ssa Marcella Marcone: contenuti, proprietà intellettuale, limitazioni di responsabilità e legge applicabile.',
   robots: { index: false, follow: false },
 }
 

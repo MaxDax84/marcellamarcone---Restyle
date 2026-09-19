@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
-
-:root {
-  --font-playfair: 'Playfair Display', Georgia, serif;
-  --font-inter: 'Inter', system-ui, sans-serif;
-}
+/*
+ * I font sono self-hosted tramite next/font/google in app/layout.tsx, che
+ * definisce le variabili --font-playfair e --font-inter sull'elemento <html>.
+ * Qui non vanno ridichiarate: sovrascriverebbero quelle generate da next/font.
+ */
 
 html {
   scroll-behavior: smooth;

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import CookiePreferencesButton from '@/components/CookiePreferencesButton'
 
 export default function Footer() {
   return (
@@ -81,6 +82,8 @@ export default function Footer() {
             <Link href="/termini-condizioni" className="font-sans text-xs text-cream/40 hover:text-cream/70 transition-colors duration-300">
               Termini e Condizioni
             </Link>
+            <span className="text-cream/20 text-xs">·</span>
+            <CookiePreferencesButton className="font-sans text-xs text-cream/40 hover:text-cream/70 transition-colors duration-300 underline-offset-2 hover:underline cursor-pointer" />
           </div>
           <p className="font-sans text-xs text-cream/40">
             Sito realizzato da{' '}

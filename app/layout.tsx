@@ -1,8 +1,31 @@
 import type { Metadata } from 'next'
+import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
+
+/**
+ * Font self-hosted da next/font: i file vengono serviti dal nostro dominio.
+ * Sostituiscono l'@import da fonts.googleapis.com che era in globals.css, il
+ * quale inviava l'IP del visitatore a Google prima di qualsiasi consenso ed
+ * era anche render-blocking.
+ * Pesi e stili replicano esattamente quelli richiesti dal vecchio @import.
+ */
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.marcellamarcone.it'),
@@ -79,7 +102,19 @@ const jsonLd = {
     name: 'Milano',
   },
   sameAs: ['https://www.sostegnoallamaternita.com'],
-  medicalSpecialty: ['Psychiatric', 'Midwifery'],
+  // Nessun `medicalSpecialty`: le specializzazioni sanitarie dichiarabili in
+  // schema.org (Psychiatric, Midwifery) non corrispondono al titolo della
+  // Dott.ssa Marcone, che e' psicologa e psicoterapeuta. `knowsAbout` descrive
+  // gli ambiti di competenza senza attribuire qualifiche non possedute.
+  knowsAbout: [
+    'Psicologia della maternità',
+    'Psicologia perinatale',
+    'Preparazione al parto',
+    'Depressione post partum',
+    'Infertilità e percorsi PMA',
+    'Micropsicoanalisi',
+    'Psicologia dello sport',
+  ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Servizi di Psicologia e Psicoterapia',
@@ -100,7 +135,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="it">
+    <html lang="it" className={`${playfair.variable} ${inter.variable}`}>
       <body className="bg-cream text-warm-brown antialiased">
         <script
           type="application/ld+json"
